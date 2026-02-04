@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bisonworkz</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="app-container">
+        <header>
+            <div class="logo">
+                <a href="index.html"
+                    style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 10px;">
+                    <img src="./assets/logo.png" alt="BISONWORKZ" style="height: 40px; object-fit: contain;">
+                </a>
+            </div>
+            <nav>
+                <a href="index.html#services">Services</a>
+                <a href="index.html#projects">Projects</a>
+                <a href="index.html#testimonials">Testimonials</a>
+                <a href="blogs.html" class="active">Blogs</a>
+            </nav>
+            <button class="mobile-menu-btn" aria-label="Toggle navigation">☰</button>
+            <a href="#" class="btn-secondary contact-trigger" style="padding: 10px 24px; font-size: 0.9rem;">
+                Contact Us
+            </a>
+        </header>
+
+        <main>
+            <section class="blog-hero">
+                <h1>Our Thoughts & Insights</h1>
+                <p>Exploring the intersection of design, technology, and artificial intelligence. Reads that inspire and
+                    educate.</p>
+            </section>
+
+            <section class="blog-grid-section">
+                <div class="blog-grid" id="blog-grid-container">
+                    <!-- Blog items will be rendered here dynamically -->
+                </div>
+
+                <script type="module">
+                    import { blogs } from './blog-data.js';
+
+                    const gridContainer = document.getElementById('blog-grid-container');
+
+                    function renderBlogs() {
+                        gridContainer.innerHTML = blogs.map(blog => `
+                            <article class="blog-card" onclick="window.location.href='blog-post.html?id=${blog.id}'" style="cursor: pointer;">
+                                <div class="blog-thumb" style="background: url('${blog.image}') center/cover;"></div>
+                                <div class="blog-content">
+                                    <span class="blog-tag">${blog.tag}</span>
+                                    <h2>${blog.title}</h2>
+                                    <p>${blog.summary}</p>
+                                    <a href="blog-post.html?id=${blog.id}" class="read-more-link">Read Article →</a>
+                                </div>
+                            </article>
+                        `).join('');
+                    }
+
+                    renderBlogs();
+                </script>
+            </section>
+        </main>
+
+        <!-- Simplified Footer for consistency -->
+        <section class="cta-section" id="contact" style="margin-top: 60px;">
+            <div id="particles-js"></div>
+            <div class="cta-content">
+                <span class="badge-pill">⦿ Available For Work</span>
+                <h2 class="cta-title">Curious about what we can create together? Let's bring something extraordinary to
+                    life!
+                </h2>
+
+                <button id="footer-contact-btn" class="btn-primary rounded-btn glow-effect contact-trigger">Book a Free
+                    Call</button>
+
+                <div class="social-links-row">
+                    <a href="#" class="social-icon">Bē</a>
+                    <span class="separator">|</span>
+                    <a href="#" class="social-icon">𝕏</a>
+                    <span class="separator">|</span>
+                    <a href="#" class="social-icon">🌐</a>
+                </div>
+
+                <div class="footer-bottom-row">
+                    <span class="footer-text">hello@framebase.design</span>
+                    <span class="footer-text">Design in Framer</span>
+                    <span class="footer-text">All rights reserved</span>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Mobile Nav Overlay -->
+    <div class="mobile-nav-overlay">
+        <button class="mobile-close-btn"
+            onclick="document.querySelector('.mobile-nav-overlay').classList.remove('active'); document.querySelector('.mobile-menu-btn').textContent='☰'">&times;</button>
+        <a href="index.html#services">Services</a>
+        <a href="index.html#projects">Projects</a>
+        <a href="blogs.html">Blogs</a>
+        <a href="#" class="contact-trigger"
+            onclick="document.querySelector('.mobile-nav-overlay').classList.remove('active'); document.querySelector('.mobile-menu-btn').textContent='☰'">Contact
+            Us</a>
+    </div>
+
+    <!-- Contact Modal -->
+    <div id="contact-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Contact Us</h2>
+            <p>Let's build something great together.</p>
+            <form id="modal-lead-form">
+                <div class="form-group">
+                    <label for="modal-name">Name</label>
+                    <input type="text" id="modal-name" class="form-input" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="modal-email">Email</label>
+                    <input type="email" id="modal-email" class="form-input" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="modal-message">Project Details</label>
+                    <textarea id="modal-message" class="form-textarea" placeholder="Tell us about your project..."
+                        required></textarea>
+                </div>
+                <button type="submit" class="btn-primary rounded-btn glow-effect form-submit-btn">Send Request</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Particles.js (Footer) -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="./main.js" type="module"></script>
+</body>
+
+</html>

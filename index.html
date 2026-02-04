@@ -1,0 +1,1093 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bisonworkz</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="app-container">
+    <header>
+      <div class="logo">
+        <a href="index.html"
+          style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 10px;">
+          <img src="./assets/logo.png" alt="BISONWORKZ" style="height: 40px; object-fit: contain;">
+        </a>
+      </div>
+      <nav>
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="blogs.html">Blogs</a>
+      </nav>
+      <button class="mobile-menu-btn" aria-label="Toggle navigation">☰</button>
+      <a href="#" class="btn-secondary contact-trigger" style="padding: 10px 24px; font-size: 0.9rem;">
+        Contact Us
+      </a>
+    </header>
+
+    <!-- Hero / Landing Section Background -->
+
+
+    <main>
+      <div class="badge-container">
+        <div class="badge">
+          <span class="dot"></span>
+          Crafting Unique Brand Identities
+        </div>
+      </div>
+
+      <h1 class="hero-title">
+        Branding that you<br>need Indeed
+      </h1>
+
+      <p class="hero-subtitle">
+        Elevate your brand with custom identity and package design. Showcase <br>your
+        story through bold visuals and strategic design solutions.
+      </p>
+
+      <div class="cta-group">
+        <a href="#" class="btn-primary glow-effect">Get Started Now</a>
+        <a href="#" class="btn-secondary">See Projects</a>
+      </div>
+
+      <div class="scroll-indicator">
+        <span>Scroll down</span>
+        <div class="mouse-icon">
+          <div class="wheel"></div>
+        </div>
+        <span>to see projects</span>
+      </div>
+
+      <!-- Moved Client Logos Here -->
+      <div class="client-logos">
+        <div class="logo-track">
+          <!-- Set 1 -->
+          <span class="client">Oasis</span>
+          <span class="client"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2L14.5 9.5H22L16 14.5L18.5 22L12 17.5L5.5 22L8 14.5L2 9.5H9.5L12 2Z" />
+            </svg> Asterisk</span>
+          <span class="client logo-box">Eooks</span>
+          <span class="client logo-round">Opal</span>
+          <span class="client">Oasis</span>
+          <!-- Set 2 (Duplicate for smooth scroll) -->
+          <span class="client">Oasis</span>
+          <span class="client"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2L14.5 9.5H22L16 14.5L18.5 22L12 17.5L5.5 22L8 14.5L2 9.5H9.5L12 2Z" />
+            </svg> Asterisk</span>
+          <span class="client logo-box">Eooks</span>
+          <span class="client logo-round">Opal</span>
+          <span class="client">Oasis</span>
+          <!-- Set 3 (Extra buffer) -->
+          <span class="client">Oasis</span>
+          <span class="client"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2L14.5 9.5H22L16 14.5L18.5 22L12 17.5L5.5 22L8 14.5L2 9.5H9.5L12 2Z" />
+            </svg> Asterisk</span>
+          <span class="client logo-box">Eooks</span>
+          <span class="client logo-round">Opal</span>
+          <span class="client">Oasis</span>
+        </div>
+      </div>
+
+      <!-- Portfolio Grid Section -->
+      <section class="portfolio-grid" id="projects">
+        <div class="grid-column">
+          <div class="grid-item">
+            <img src="./assets/p1.png" alt="Project 1">
+            <div class="case-study-btn">View Casestudy <span class="arrow">↗</span></div>
+          </div>
+          <div class="grid-item">
+            <img src="./assets/p3.png" alt="Project 2">
+            <div class="case-study-btn">View Casestudy <span class="arrow">↗</span></div>
+          </div>
+        </div>
+        <div class="grid-column middle-column">
+          <div class="grid-item">
+            <img src="./assets/p2.png" alt="Project 3">
+            <!-- No button overlay on the large middle image typically, or stylistic choice, adding it to match consistency if needed, but the reference shows it -->
+            <div class="case-study-btn">View Casestudy <span class="arrow">↗</span></div>
+          </div>
+          <div class="grid-item">
+            <img src="./assets/p4.png" alt="Project 4">
+            <div class="case-study-btn">View Casestudy <span class="arrow">↗</span></div>
+          </div>
+        </div>
+        <div class="grid-column">
+          <div class="grid-item">
+            <img src="./assets/p3.png" alt="Project 5">
+            <div class="case-study-btn">View Casestudy <span class="arrow">↗</span></div>
+          </div>
+          <div class="grid-item">
+            <img src="./assets/p1.png" alt="Project 6">
+            <div class="case-study-btn">View Casestudy <span class="arrow">↗</span></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer Actions (Moved Up) -->
+      <div class="footer-actions">
+        <a href="#" class="btn-link">All Projects</a>
+        <a href="#" class="btn-secondary rounded-btn">Book a Free Call</a>
+      </div>
+
+      <!-- Team Carousel Section 
+      <section class="team-carousel">
+        <div class="carousel-track-container">
+        <div class="team-slide active">
+            <div class="bio-content">
+              <h2 class="section-title">Meet Dhruv</h2>
+              <p class="bio-text">
+                I'm Dhruv, a passionate Brand Identity & Package Designer based in Tokyo. I specialize in crafting bold
+                visual identities and packaging that captivate and inspire, blending creativity with strategy to elevate
+                brands.
+              </p>
+
+              <div class="tags-container">
+                <span class="tag">Product Design</span>
+                <span class="tag">Brand Identity Design</span>
+                <span class="tag">UX Design</span>
+                <span class="tag">Branding</span>
+                <span class="tag">Packaging Design</span>
+                <span class="tag">Figma</span>
+                <span class="tag">Photoshop</span>
+              </div>
+
+              <div class="experience-list">
+                <div class="exp-item">
+                  <span class="role">Freelance</span>
+                  <span class="company">GreenLeaf Co</span>
+                  <span class="period">Currently</span>
+                </div>
+                <div class="exp-item">
+                  <span class="role">Brand Designer</span>
+                  <span class="company">UrbanFit Studio</span>
+                  <span class="period">2023-24</span>
+                </div>
+                <div class="exp-item">
+                  <span class="role">Package Designer</span>
+                  <span class="company">GreenK Studio</span>
+                  <span class="period">2020-22</span>
+                </div>
+              </div>
+            </div>
+            <div class="bio-image">
+              <img src="./assets/meily.png" alt="Dhruv Portrait">
+            </div>
+          </div>
+
+          <div class="team-slide">
+            <div class="bio-content">
+              <h2 class="section-title">Meet Ronak</h2>
+              <p class="bio-text">
+                I'm Ronak, a creative director and illustrator with a focus on minimalism and typography. I bring
+                stories
+                to life through clean lines and thoughtful composition, ensuring every brand voice is heard clearly.
+              </p>
+
+              <div class="tags-container">
+                <span class="tag">Art Direction</span>
+                <span class="tag">Illustration</span>
+                <span class="tag">Typography</span>
+                <span class="tag">Motion Design</span>
+                <span class="tag">Blender</span>
+                <span class="tag">After Effects</span>
+              </div>
+
+              <div class="experience-list">
+                <div class="exp-item">
+                  <span class="role">Creative Lead</span>
+                  <span class="company">Studio K</span>
+                  <span class="period">Currently</span>
+                </div>
+                <div class="exp-item">
+                  <span class="role">Senior Illustrator</span>
+                  <span class="company">PolyGon Arts</span>
+                  <span class="period">2021-23</span>
+                </div>
+                <div class="exp-item">
+                  <span class="role">Graphic Designer</span>
+                  <span class="company">Neon Wave</span>
+                  <span class="period">2019-21</span>
+                </div>
+              </div>
+            </div>
+            <div class="bio-image">
+              <img src="./assets/alex.png" alt="Ronak Portrait">
+            </div>
+          </div>
+
+          <div class="team-slide">
+            <div class="bio-content">
+              <h2 class="section-title">Meet Harpreet</h2>
+              <p class="bio-text">
+                I'm Harpreet, a strategic UX researcher and interface designer. I focus on creating user-centric digital
+                experiences that are intuitive, accessible, and delightful to use.
+              </p>
+
+              <div class="tags-container">
+                <span class="tag">UX Research</span>
+                <span class="tag">Interface Design</span>
+                <span class="tag">Prototyping</span>
+                <span class="tag">Usability Testing</span>
+                <span class="tag">Figma</span>
+                <span class="tag">Principle</span>
+              </div>
+
+              <div class="experience-list">
+                <div class="exp-item">
+                  <span class="role">Senior UX Designer</span>
+                  <span class="company">TechFlow</span>
+                  <span class="period">Currently</span>
+                </div>
+                <div class="exp-item">
+                  <span class="role">Product Designer</span>
+                  <span class="company">Innovate Inc</span>
+                  <span class="period">2022-23</span>
+                </div>
+                <div class="exp-item">
+                  <span class="role">UI Designer</span>
+                  <span class="company">Creativv</span>
+                  <span class="period">2020-22</span>
+                </div>
+              </div>
+            </div>
+            <div class="bio-image">
+              <img src="./assets/alex.png" alt="Harpreet Portrait">
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-controls">
+          <button class="nav-btn prev-btn" id="prevBtn">←</button>
+          <div class="carousel-indicators">
+            <span class="indicator active"></span>
+            <span class="indicator"></span>
+            <span class="indicator"></span>
+          </div>
+          <button class="nav-btn next-btn" id="nextBtn">→</button>
+        </div>
+      </section>-->
+
+      <!-- Recent Works Section -->
+      <section class="recent-works">
+        <div class="recent-header">
+          <h3>Recent Works <span class="arrow-circle">↓</span></h3>
+        </div>
+        <div class="works-slider">
+          <!-- Row 1 -->
+          <div class="work-card">
+            <!-- Using the color image as base so content matches perfectly on hover -->
+            <img src="./assets/rw1_color.png" alt="Work 1" class="interactive-img">
+            <div class="case-study-btn">View Casestudy <span class="arrow">↗</span></div>
+          </div>
+          <div class="work-card">
+            <img src="./assets/rw2_color.png" alt="Work 2" class="interactive-img">
+            <div class="case-study-btn">View Casestudy <span class="arrow">↗</span></div>
+          </div>
+          <div class="work-card">
+            <!-- Reverting to original B&W for Tote and Tube to preserve correct content -->
+            <img src="./assets/rw3.png" alt="Work 3" class="interactive-img">
+            <div class="case-study-btn">View Casestudy <span class="arrow">↗</span></div>
+          </div>
+          <div class="work-card">
+            <img src="./assets/rw4.png" alt="Work 4" class="interactive-img">
+            <div class="case-study-btn">View Casestudy <span class="arrow">↗</span></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Process Section -->
+      <section class="process-section">
+        <div class="process-image">
+          <!-- Using Alex (Designer Sketching) as it is highly relevant for "Process" -->
+          <img src="./assets/alex.png" alt="Design Process" style="width: 100%; height: 100%; object-fit: cover; ">
+        </div>
+        <div class="process-content">
+          <div class="process-header">
+            <span class="badge-pill">⦿ Design process</span>
+            <h2 class="section-title">Process</h2>
+            <p class="section-desc">
+              crafting bold visuals that inspire and elevate brands with thought process.
+            </p>
+            <div class="process-actions">
+              <a href="#" class="btn-secondary rounded-btn small-btn">Book a Free Call</a>
+              <a href="#" class="btn-secondary rounded-btn small-btn">See Projects</a>
+            </div>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number">1</div>
+            <div class="step-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" />
+                <circle cx="12" cy="9" r="2.5" />
+              </svg>
+            </div>
+            <h3>Define Your Vision</h3>
+            <p>Find the perfect plan tailored to your needs, offering the right balance of features, flexibility, and
+              value to help you achieve your goals effortlessly.</p>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number">2</div>
+            <div class="step-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="8" y1="6" x2="21" y2="6" />
+                <line x1="8" y1="12" x2="21" y2="12" />
+                <line x1="8" y1="18" x2="21" y2="18" />
+                <line x1="3" y1="6" x2="3.01" y2="6" />
+                <line x1="3" y1="12" x2="3.01" y2="12" />
+                <line x1="3" y1="18" x2="3.01" y2="18" />
+              </svg>
+            </div>
+            <h3>Submit Your Request</h3>
+            <p>Easily submit your design requirements through our private design portal, ensuring a seamless process
+              where your vision is understood, refined, and brought to life with precision and creativity.</p>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number">3</div>
+            <div class="step-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z" />
+                <path
+                  d="M12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z" />
+                <path d="M9 12l2 2" />
+                <path d="M2 2l2 2" />
+              </svg>
+            </div>
+            <h3>Project Delivered</h3>
+            <p>As a dedicated freelancer, I ensure your project is completed with precision and delivered within 2-3
+              days. With a keen eye for detail and a passion for quality, I bring your vision to life—on time and beyond
+              expectations.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services Section -->
+      <section class="services-section" id="services">
+        <div class="services-intro">
+          <div class="services-text">
+            <span class="badge-pill">⦿ Design services</span>
+            <h2 class="section-title">Services</h2>
+            <p class="section-desc">
+              Helping businesses standout with brand identity packaging that captivates and converts effectively.
+            </p>
+            <div class="intro-tags-grid">
+              <span class="service-pill">Product Design</span>
+              <span class="service-pill">Brand Identity Design</span>
+              <span class="service-pill">Branding</span>
+              <span class="service-pill">Packaging Design</span>
+              <span class="service-pill">Mockup Design</span>
+            </div>
+            <div class="process-actions">
+              <a href="#" class="btn-primary rounded-btn small-btn glow-effect">Book a Free Call</a>
+              <a href="#" class="btn-secondary rounded-btn small-btn">See Projects</a>
+            </div>
+          </div>
+          <div class="services-hero-image">
+            <!-- Using bottle image as closest fallback -->
+            <img src="./assets/rw2.png" alt="Services Hero">
+          </div>
+        </div>
+
+        <div class="services-grid">
+          <!-- Card 1 -->
+          <div class="service-card">
+            <div class="card-header">
+              <div class="svc-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+                </svg>
+              </div>
+              <h3>Brand Identity</h3>
+            </div>
+            <div class="card-divider"></div>
+            <p>Crafting unique, memorable brand identities that resonate with your audience — from logos to visual
+              systems — ensuring every touchpoint reflects your brand's essence.</p>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="service-card">
+            <div class="card-header">
+              <div class="svc-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                </svg>
+              </div>
+              <h3>Brand Design</h3>
+            </div>
+            <div class="card-divider"></div>
+            <p>Designing sleek, impactful packaging that not only looks stunning but also connects with your ideal
+              customers — turning first impressions into lasting brand loyalty.</p>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="service-card">
+            <div class="card-header">
+              <div class="svc-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path
+                    d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+                  <polyline points="3.27 6.96 12 12.01 20.73 6.96" />
+                  <line x1="12" y1="22.08" x2="12" y2="12" />
+                </svg>
+              </div>
+              <h3>Package Design</h3>
+            </div>
+            <div class="card-divider"></div>
+            <p>Bringing your brand to life through high-fidelity product mockups, giving you a clear, realistic preview
+              of how your packaging and visuals will stand out in the real world.</p>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="service-card">
+            <div class="card-header">
+              <div class="svc-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
+                  <line x1="3" y1="9" x2="21" y2="9" />
+                  <line x1="9" y1="21" x2="9" y2="9" />
+                </svg>
+              </div>
+              <h3>Mockup Design</h3>
+            </div>
+            <div class="card-divider"></div>
+            <p>Tailored design mockups that align perfectly with your brand's aesthetic — because every detail matters
+              when showcasing your product's true potential.</p>
+          </div>
+        </div>
+
+        <!-- Scrolling Marquee for Services -->
+        <div class="client-logos services-marquee">
+          <div class="logo-track">
+            <!-- Set 1 -->
+            <span class="tag-pill"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+                <line x1="8" y1="21" x2="16" y2="21" />
+                <line x1="12" y1="17" x2="12" y2="21" />
+              </svg> Brand Graphics</span>
+            <span class="tag-pill"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <path d="M17 2.1l4 4-4 4" />
+                <path d="M3 12.2v-2a4 4 0 0 1 4-4h12.8M7 21.9l-4-4 4-4" />
+                <path d="M21 11.8v2a4 4 0 0 1-4 4H4.2" />
+              </svg> Brand Migration</span>
+            <span class="tag-pill"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              </svg> Package Design</span>
+            <span class="tag-pill"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <circle cx="12" cy="12" r="10" />
+                <line x1="2" y1="12" x2="22" y2="12" />
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+              </svg> Branding</span>
+            <span class="tag-pill"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+                <line x1="8" y1="21" x2="16" y2="21" />
+                <line x1="12" y1="17" x2="12" y2="21" />
+              </svg> Slide Decks</span>
+            <span class="tag-pill"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7" />
+                <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z" />
+              </svg> Copywriting</span>
+
+            <!-- Set 2 -->
+            <span class="tag-pill"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+                <line x1="8" y1="21" x2="16" y2="21" />
+                <line x1="12" y1="17" x2="12" y2="21" />
+              </svg> Brand Graphics</span>
+            <span class="tag-pill"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <path d="M17 2.1l4 4-4 4" />
+                <path d="M3 12.2v-2a4 4 0 0 1 4-4h12.8M7 21.9l-4-4 4-4" />
+                <path d="M21 11.8v2a4 4 0 0 1-4 4H4.2" />
+              </svg> Brand Migration</span>
+            <span class="tag-pill"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              </svg> Package Design</span>
+            <span class="tag-pill"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <circle cx="12" cy="12" r="10" />
+                <line x1="2" y1="12" x2="22" y2="12" />
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+              </svg> Branding</span>
+            <span class="tag-pill"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+                <line x1="8" y1="21" x2="16" y2="21" />
+                <line x1="12" y1="17" x2="12" y2="21" />
+              </svg> Slide Decks</span>
+            <span class="tag-pill"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7" />
+                <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z" />
+              </svg> Copywriting</span>
+
+            <!-- Set 3 -->
+            <span class="tag-pill"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+                <line x1="8" y1="21" x2="16" y2="21" />
+                <line x1="12" y1="17" x2="12" y2="21" />
+              </svg> Brand Graphics</span>
+            <span class="tag-pill"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <path d="M17 2.1l4 4-4 4" />
+                <path d="M3 12.2v-2a4 4 0 0 1 4-4h12.8M7 21.9l-4-4 4-4" />
+                <path d="M21 11.8v2a4 4 0 0 1-4 4H4.2" />
+              </svg> Brand Migration</span>
+            <span class="tag-pill"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              </svg> Package Design</span>
+            <span class="tag-pill"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <circle cx="12" cy="12" r="10" />
+                <line x1="2" y1="12" x2="22" y2="12" />
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+              </svg> Branding</span>
+            <span class="tag-pill"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+                <line x1="8" y1="21" x2="16" y2="21" />
+                <line x1="12" y1="17" x2="12" y2="21" />
+              </svg> Slide Decks</span>
+            <span class="tag-pill"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7" />
+                <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z" />
+              </svg> Copywriting</span>
+
+            <!-- Set 4 -->
+            <span class="tag-pill"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+                <line x1="8" y1="21" x2="16" y2="21" />
+                <line x1="12" y1="17" x2="12" y2="21" />
+              </svg> Brand Graphics</span>
+            <span class="tag-pill"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <path d="M17 2.1l4 4-4 4" />
+                <path d="M3 12.2v-2a4 4 0 0 1 4-4h12.8M7 21.9l-4-4 4-4" />
+                <path d="M21 11.8v2a4 4 0 0 1-4 4H4.2" />
+              </svg> Brand Migration</span>
+            <span class="tag-pill"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              </svg> Package Design</span>
+            <span class="tag-pill"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <circle cx="12" cy="12" r="10" />
+                <line x1="2" y1="12" x2="22" y2="12" />
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+              </svg> Branding</span>
+            <span class="tag-pill"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+                <line x1="8" y1="21" x2="16" y2="21" />
+                <line x1="12" y1="17" x2="12" y2="21" />
+              </svg> Slide Decks</span>
+            <span class="tag-pill"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7" />
+                <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z" />
+              </svg> Copywriting</span>
+
+          </div>
+        </div>
+
+        <!-- Second Row (Reverse Direction) -->
+        <div class="client-logos services-marquee reverse-marquee">
+          <div class="logo-track">
+            <!-- Set 1 -->
+            <span class="tag-pill"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+                <line x1="8" y1="21" x2="16" y2="21" />
+                <line x1="12" y1="17" x2="12" y2="21" />
+              </svg> Web Design</span>
+            <span class="tag-pill"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+              </svg> 3D Visuals</span>
+            <span class="tag-pill"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <path
+                  d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+              </svg> Packaging</span>
+            <span class="tag-pill"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <circle cx="12" cy="12" r="10" />
+                <line x1="2" y1="12" x2="22" y2="12" />
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+              </svg> Art Direction</span>
+            <span class="tag-pill"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
+                <line x1="9" y1="9" x2="15" y2="15" />
+                <line x1="15" y1="9" x2="9" y2="15" />
+              </svg> UI/UX</span>
+
+            <!-- Set 2 (Exact Duplicate) -->
+            <span class="tag-pill"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+                <line x1="8" y1="21" x2="16" y2="21" />
+                <line x1="12" y1="17" x2="12" y2="21" />
+              </svg> Web Design</span>
+            <span class="tag-pill"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+              </svg> 3D Visuals</span>
+            <span class="tag-pill"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <path
+                  d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+              </svg> Packaging</span>
+            <span class="tag-pill"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <circle cx="12" cy="12" r="10" />
+                <line x1="2" y1="12" x2="22" y2="12" />
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+              </svg> Art Direction</span>
+            <span class="tag-pill"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
+                <line x1="9" y1="9" x2="15" y2="15" />
+                <line x1="15" y1="9" x2="9" y2="15" />
+              </svg> UI/UX</span>
+
+            <!-- Set 3 (Triple for wide screens if needed) -->
+            <span class="tag-pill"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+                <line x1="8" y1="21" x2="16" y2="21" />
+                <line x1="12" y1="17" x2="12" y2="21" />
+              </svg> Web Design</span>
+            <span class="tag-pill"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+              </svg> 3D Visuals</span>
+            <span class="tag-pill"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <path
+                  d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+              </svg> Packaging</span>
+            <span class="tag-pill"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <circle cx="12" cy="12" r="10" />
+                <line x1="2" y1="12" x2="22" y2="12" />
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+              </svg> Art Direction</span>
+            <span class="tag-pill"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
+                <line x1="9" y1="9" x2="15" y2="15" />
+                <line x1="15" y1="9" x2="9" y2="15" />
+              </svg> UI/UX</span>
+
+            <!-- Set 4 (Quadruple for wide screens) -->
+            <span class="tag-pill"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+                <line x1="8" y1="21" x2="16" y2="21" />
+                <line x1="12" y1="17" x2="12" y2="21" />
+              </svg> Web Design</span>
+            <span class="tag-pill"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+              </svg> 3D Visuals</span>
+            <span class="tag-pill"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <path
+                  d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+              </svg> Packaging</span>
+            <span class="tag-pill"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <circle cx="12" cy="12" r="10" />
+                <line x1="2" y1="12" x2="22" y2="12" />
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+              </svg> Art Direction</span>
+            <span class="tag-pill"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
+                <line x1="9" y1="9" x2="15" y2="15" />
+                <line x1="15" y1="9" x2="9" y2="15" />
+              </svg> UI/UX</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Client Reviews Section -->
+      <section class="reviews-section" id="testimonials">
+        <div class="reviews-header-area">
+          <div class="reviews-image">
+            <!-- Using Alex as closest 'Studio' fallback -->
+            <img src="./assets/alex.png" alt="Studio Life">
+          </div>
+          <div class="reviews-intro-text">
+            <span class="badge-pill">⦿ Reviews</span>
+            <h2 class="section-title">Client Reviews</h2>
+            <p class="section-desc">
+              Real feedback from clients who trusted my design expertise to elevate their brands successfully.
+            </p>
+            <div class="process-actions">
+              <a href="#" class="btn-primary rounded-btn small-btn glow-effect">Book a Free Call</a>
+              <a href="#" class="btn-secondary rounded-btn small-btn">See Services</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Scrollable Reviews Container with Infinite Animation -->
+        <div class="reviews-scroll-container">
+          <div class="reviews-track">
+            <!-- Set 1 -->
+            <div class="review-card">
+              <div class="client-profile">
+                <img src="./assets/meily.png" alt="Jona Carter">
+              </div>
+              <h3>Jona Carter</h3>
+              <span class="client-role">Founder of EcoLux</span>
+              <div class="divider-line"></div>
+              <p>"Every project Meily touches turns into a perfect blend of design and purpose. She crafted packaging
+                that reflected our eco-friendly mission while making our products stand out on the shelves."</p>
+              <div class="star-rating">
+                5.0 <span class="stars">★★★★★</span>
+              </div>
+            </div>
+
+            <div class="review-card">
+              <div class="client-profile">
+                <img src="./assets/alex.png" alt="Sofia Toms">
+              </div>
+              <h3>Sofia Toms</h3>
+              <span class="client-role">Founder at GreenK Studios</span>
+              <div class="divider-line"></div>
+              <p>"Meily's designs speak for themselves — bold, strategic, and impactful. She took the time to understand
+                our brand, delivering packaging concepts that resonated with our target audience and boosted our
+                product's visibility."</p>
+              <div class="star-rating">
+                5.0 <span class="stars">★★★★★</span>
+              </div>
+            </div>
+
+            <div class="review-card">
+              <div class="client-profile">
+                <div
+                  style="width: 100%; height: 100%; background: #333; display: flex; align-items: center; justify-content: center; color: #fff;">
+                  R</div>
+              </div>
+              <h3>Richards</h3>
+              <span class="client-role">Creative Director</span>
+              <div class="divider-line"></div>
+              <p>"Working with Meily was a game changer. Her ability to merge distinct brand elements into designs that
+                not only look great but drive meaningful engagement is unmatched."</p>
+              <div class="star-rating">
+                5.0 <span class="stars">★★★★★</span>
+              </div>
+            </div>
+
+            <!-- Duplicate Set for Infinite Loop -->
+            <div class="review-card">
+              <div class="client-profile">
+                <img src="./assets/meily.png" alt="Jona Carter">
+              </div>
+              <h3>Jona Carter</h3>
+              <span class="client-role">Founder of EcoLux</span>
+              <div class="divider-line"></div>
+              <p>"Every project Meily touches turns into a perfect blend of design and purpose. She crafted packaging
+                that reflected our eco-friendly mission while making our products stand out on the shelves."</p>
+              <div class="star-rating">
+                5.0 <span class="stars">★★★★★</span>
+              </div>
+            </div>
+
+            <div class="review-card">
+              <div class="client-profile">
+                <img src="./assets/alex.png" alt="Sofia Toms">
+              </div>
+              <h3>Sofia Toms</h3>
+              <span class="client-role">Founder at GreenK Studios</span>
+              <div class="divider-line"></div>
+              <p>"Meily's designs speak for themselves — bold, strategic, and impactful. She took the time to understand
+                our brand, delivering packaging concepts that resonated with our target audience and boosted our
+                product's visibility."</p>
+              <div class="star-rating">
+                5.0 <span class="stars">★★★★★</span>
+              </div>
+            </div>
+
+            <div class="review-card">
+              <div class="client-profile">
+                <div
+                  style="width: 100%; height: 100%; background: #333; display: flex; align-items: center; justify-content: center; color: #fff;">
+                  R</div>
+              </div>
+              <h3>Richards</h3>
+              <span class="client-role">Creative Director</span>
+              <div class="divider-line"></div>
+              <p>"Working with Meily was a game changer. Her ability to merge distinct brand elements into designs that
+                not only look great but drive meaningful engagement is unmatched."</p>
+              <div class="star-rating">
+                5.0 <span class="stars">★★★★★</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Stats Bar -->
+        <div class="stats-bar">
+          <div class="stat-item">
+            <span class="stat-number">180+</span>
+            <span class="stat-label">design projects completed.</span>
+          </div>
+          <div class="stat-separator"></div>
+          <div class="stat-item">
+            <span class="stat-number">96%</span>
+            <span class="stat-label">Client satisfaction rate.</span>
+          </div>
+          <div class="stat-separator"></div>
+          <div class="stat-item">
+            <span class="stat-number">15+</span>
+            <span class="stat-label">Years of experience</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ / Answers Section -->
+      <section class="answers-section">
+        <div class="answers-container">
+          <!-- Left Column -->
+          <div class="answers-left">
+            <div class="answers-header">
+              <span class="badge-pill">⦿ FAQ'S</span>
+              <h2 class="section-title">Answers</h2>
+              <p class="section-desc">
+                Find answers to common questions about my design process, services etc...
+              </p>
+            </div>
+
+            <div class="answers-image-card">
+              <!-- Using a placeholder for now as generation was rate limited -->
+              <img src="./assets/p2.png" alt="Creative Process" class="faq-hero-img">
+            </div>
+
+            <div class="faq-tags">
+              <span class="tag">Product Design</span>
+              <span class="tag">Brand Identity Design</span>
+              <span class="tag">Branding</span>
+            </div>
+
+            <div class="faq-cta">
+              <a href="#" class="btn-secondary rounded-btn">Book a Free Call</a>
+            </div>
+          </div>
+
+          <!-- Right Column (Accordion) -->
+          <div class="answers-right">
+            <div class="faq-list">
+              <!-- Item 1 -->
+              <div class="faq-item active">
+                <div class="faq-question">
+                  <h3>What services do you provide?</h3>
+                  <span class="faq-icon">×</span>
+                </div>
+                <div class="faq-answer show">
+                  <p>I specialize in brand identity and package design, with experience in web design, UI/UX, and to
+                    create brand experiences.</p>
+                </div>
+              </div>
+
+              <!-- Item 2 -->
+              <div class="faq-item">
+                <div class="faq-question">
+                  <h3>How do I start working with you?</h3>
+                  <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                  <p>Simply book a free call using the button below or fill out the contact form. We'll discuss your
+                    goals and how I can help.</p>
+                </div>
+              </div>
+
+              <!-- Item 3 -->
+              <div class="faq-item">
+                <div class="faq-question">
+                  <h3>What design tools do you use?</h3>
+                  <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                  <p>I primarily use Figma for UI/UX, Adobe Illustrator for branding and vectors, and Photoshop for
+                    editing and mockups.</p>
+                </div>
+              </div>
+
+              <!-- Item 4 -->
+              <div class="faq-item">
+                <div class="faq-question">
+                  <h3>How long does a project take?</h3>
+                  <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                  <p>Timelines vary by project scope. A brand identity typically takes 2-4 weeks, while a full website
+                    may take 4-8 weeks.</p>
+                </div>
+              </div>
+
+              <!-- Item 5 -->
+              <div class="faq-item">
+                <div class="faq-question">
+                  <h3>Do you provide revisions?</h3>
+                  <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                  <p>Yes, I include a specific number of revision rounds in each package to ensure the final result
+                    meets your expectations perfectly.</p>
+                </div>
+              </div>
+
+              <!-- Item 6 -->
+              <div class="faq-item">
+                <div class="faq-question">
+                  <h3>What industries do you work with?</h3>
+                  <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                  <p>I work with a diverse range of industries including tech startups, e-commerce brands, lifestyle
+                    products, and creative agencies.</p>
+                </div>
+              </div>
+
+              <!-- Item 7 -->
+              <div class="faq-item">
+                <div class="faq-question">
+                  <h3>Do you offer development services?</h3>
+                  <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                  <p>I focus on design, but I collaborate with trusted developers to bring the designs to life if you
+                    need a full turnkey solution.</p>
+                </div>
+              </div>
+
+              <!-- Item 8 -->
+              <div class="faq-item">
+                <div class="faq-question">
+                  <h3>What is your pricing structure?</h3>
+                  <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                  <p>Pricing is project-based. I'll provide a custom quote after our initial discovery call to ensure it
+                    matches your specific needs.</p>
+                </div>
+              </div>
+
+              <!-- Item 9 -->
+              <div class="faq-item">
+                <div class="faq-question">
+                  <h3>Can you redesign my existing website?</h3>
+                  <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                  <p>Absolutely. I can audit your current site and propose a redesign that improves aesthetics, user
+                    experience, and conversion rates.</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+
+      </section>
+
+      <!-- CTA / Footer Section -->
+      <section class="cta-section" id="contact">
+        <div id="particles-js"></div>
+        <div class="cta-content">
+          <span class="badge-pill">⦿ Available For Work</span>
+          <h2 class="cta-title">Curious about what we can create together? Let's bring something extraordinary to life!
+          </h2>
+          <button id="footer-contact-btn" class="btn-primary rounded-btn glow-effect contact-trigger">Book a Free
+            Call</button>
+
+          <div class="social-links-row">
+            <a href="#" class="social-icon">Bē</a>
+            <span class="separator">|</span>
+            <a href="#" class="social-icon">𝕏</a>
+            <span class="separator">|</span>
+            <a href="#" class="social-icon">🌐</a>
+          </div>
+
+          <div class="footer-bottom-row">
+            <span class="footer-text">hello@framebase.design</span>
+            <span class="footer-text">Design in Framer</span>
+            <span class="footer-text">All rights reserved</span>
+          </div>
+        </div>
+      </section>
+
+  </div>
+
+  <!-- Mobile Nav Overlay -->
+  <div class="mobile-nav-overlay">
+    <button class="mobile-close-btn"
+      onclick="document.querySelector('.mobile-nav-overlay').classList.remove('active'); document.querySelector('.mobile-menu-btn').textContent='☰'">&times;</button>
+    <a href="#services"
+      onclick="document.querySelector('.mobile-nav-overlay').classList.remove('active'); document.querySelector('.mobile-menu-btn').textContent='☰'">Services</a>
+    <a href="#projects"
+      onclick="document.querySelector('.mobile-nav-overlay').classList.remove('active'); document.querySelector('.mobile-menu-btn').textContent='☰'">Projects</a>
+    <a href="blogs.html">Blogs</a>
+    <a href="#" class="contact-trigger"
+      onclick="document.querySelector('.mobile-nav-overlay').classList.remove('active'); document.querySelector('.mobile-menu-btn').textContent='☰'">Contact
+      Us</a>
+  </div>
+
+  <!-- Contact Modal -->
+  <div id="contact-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <h2>Contact Us</h2>
+      <p>Let's build something great together.</p>
+      <form id="modal-lead-form">
+        <div class="form-group">
+          <label for="modal-name">Name</label>
+          <input type="text" id="modal-name" class="form-input" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+          <label for="modal-email">Email</label>
+          <input type="email" id="modal-email" class="form-input" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+          <label for="modal-message">Project Details</label>
+          <textarea id="modal-message" class="form-textarea" placeholder="Tell us about your project..."
+            required></textarea>
+        </div>
+        <button type="submit" class="btn-primary rounded-btn glow-effect form-submit-btn">Send Request</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- WebGL Fluid Hero -->
+
+  <!-- Particles.js (Footer) -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script src="./main.js" type="module"></script>
+</body>
+
+</html>
