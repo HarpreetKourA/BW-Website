@@ -44,41 +44,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Simple Carousel Logic
-    const slides = document.querySelectorAll('.team-slide');
-    const indicators = document.querySelectorAll('.indicator');
-    const prevBtn = document.getElementById('prevBtn');
-    const nextBtn = document.getElementById('nextBtn');
-    let currentSlide = 0;
-
-    function showSlide(index) {
-        if (slides.length === 0) return;
-
-        slides.forEach((slide, i) => {
-            slide.classList.remove('active');
-            if (indicators[i]) indicators[i].classList.remove('active');
-
-            if (i === index) {
-                slide.classList.add('active');
-                if (indicators[i]) indicators[i].classList.add('active');
-            }
-        });
-        currentSlide = index;
-    }
-
-    if (nextBtn && prevBtn) {
-        nextBtn.addEventListener('click', () => {
-            let next = currentSlide + 1;
-            if (next >= slides.length) next = 0;
-            showSlide(next);
-        });
-
-        prevBtn.addEventListener('click', () => {
-            let prev = currentSlide - 1;
-            if (prev < 0) prev = slides.length - 1;
-            showSlide(prev);
-        });
-    }
 
     // Modal Logic
     const modal = document.getElementById('contact-modal');

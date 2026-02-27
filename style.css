@@ -556,31 +556,19 @@ main {
     padding: 12px 24px;
 }
 
-/* Team Carousel Section */
-.team-carousel {
+/* Team Static Section */
+.team-static {
     position: relative;
     margin-top: 50px;
     padding-bottom: 20px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-.carousel-track-container {
-    position: relative;
-    min-height: auto;
-}
-
-.team-slide {
-    display: none;
-    /* Hidden by default */
+.team-container {
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    /* Vertically center content */
     gap: 60px;
-    animation: fadeIn 0.5s ease;
-}
-
-.team-slide.active {
-    display: flex;
 }
 
 @keyframes fadeIn {
@@ -595,14 +583,6 @@ main {
     }
 }
 
-/* Controls */
-.carousel-controls {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    margin-top: 40px;
-}
 
 .nav-btn {
     background: transparent;
@@ -624,23 +604,6 @@ main {
     color: black;
 }
 
-.carousel-indicators {
-    display: flex;
-    gap: 10px;
-}
-
-.indicator {
-    width: 8px;
-    height: 8px;
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 50%;
-    transition: all 0.3s;
-}
-
-.indicator.active {
-    background: white;
-    transform: scale(1.2);
-}
 
 /* Reusing existing bio content styles but ensuring they work inside .team-card */
 .bio-content {
@@ -1167,7 +1130,7 @@ main {
 
 .services-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 24px;
     margin-bottom: 60px;
 }
@@ -1663,6 +1626,7 @@ main {
     margin-bottom: 20px;
     background: linear-gradient(to right, #fff, #888);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
