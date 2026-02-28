@@ -2,21 +2,7 @@
 import { inject } from '@vercel/speed-insights';
 import particlesConfig from './particles-config.js';
 
-// Preloader Logic
-window.addEventListener('load', () => {
-    const preloader = document.getElementById('preloader');
-    if (preloader) {
-        // Small delay to ensure smooth transition and minimum viewing time
-        setTimeout(() => {
-            preloader.classList.add('fade-out');
-
-            // Remove from DOM after transition completes to free up memory
-            setTimeout(() => {
-                preloader.remove();
-            }, 800); // Matches the CSS transition duration
-        }, 1000); // 1 second minimum display time
-    }
-});
+// Preloader Logic moved to index.html for maximum reliability
 
 document.addEventListener('DOMContentLoaded', () => {
     // Initialize Vercel Speed Insights
