@@ -1,12 +1,12 @@
 // FAQ Accordion Logic
-import { inject } from '@vercel/speed-insights';
+import { injectSpeedInsights } from '@vercel/speed-insights';
 import particlesConfig from './particles-config.js';
 
 // Preloader Logic moved to index.html for maximum reliability
 
 document.addEventListener('DOMContentLoaded', () => {
     // Initialize Vercel Speed Insights
-    inject();
+    injectSpeedInsights();
 
     // Initialize Footer Particles
     setTimeout(() => {
