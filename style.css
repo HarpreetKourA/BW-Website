@@ -265,6 +265,7 @@ main {
     display: flex;
     align-items: center;
     gap: 15px;
+    margin-bottom: 40PX;
     color: var(--text-secondary);
     font-size: 0.85rem;
     opacity: 0.7;
@@ -303,7 +304,7 @@ main {
 
 /* Footer / Clients / Marquee */
 .client-logos {
-    padding: 40px 0;
+    padding: 10px 0;
     display: flex;
     overflow: hidden;
     /* Hide overflow for marquee */
@@ -319,18 +320,29 @@ main {
     /* Space between logos */
     animation: scroll-logos 20s linear infinite;
     white-space: nowrap;
-    /* Removed padding-left to fix jump */
+    width: max-content;
+    padding-right: 80px;
+    /* Add the gap at the end for perfect 50% loop */
 }
 
 .client {
-    font-size: 1.5rem;
-    font-weight: 600;
     display: flex;
     align-items: center;
     gap: 10px;
-    color: #666;
     flex-shrink: 0;
-    /* Prevent shrinking */
+}
+
+.client img {
+    height: 45px;
+    width: auto;
+    filter: grayscale(100%);
+    opacity: 0.6;
+    transition: all 0.3s ease;
+}
+
+.client img:hover {
+    filter: grayscale(0%);
+    opacity: 1;
 }
 
 @keyframes scroll-logos {
@@ -339,7 +351,8 @@ main {
     }
 
     100% {
-        transform: translateX(-50%);
+        transform: translateX(-25%);
+        /* -25% because we have 4 sets of logos */
     }
 
     /* Determine exact percentage based on duplication */
@@ -356,7 +369,7 @@ main {
     /* Middle column slightly wider/different as per artistic layout */
     gap: 20px;
     width: 100%;
-    margin-top: 60px;
+    margin-top: 150px;
     /* Reduced from 100px */
     padding-bottom: 40px;
     /* Reduced from 60px */
@@ -409,7 +422,7 @@ main {
     justify-content: center;
     align-items: center;
     gap: 8px;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     color: white;
     opacity: 0;
     transform: translateY(10px);
@@ -612,22 +625,24 @@ main {
 /* Recent Works Section */
 .recent-works {
     margin-top: 60px;
-    /* Reduced from 80px */
     margin-bottom: 80px;
-    /* Reduced from 60px */
+    width: 100%;
 }
 
 .recent-header {
-    margin-bottom: 20px;
-    /* Reduced */
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 10;
+    text-align: left;
+    width: 100%;
 }
 
 .recent-header h3 {
     font-size: 1.5rem;
     font-weight: 500;
-    display: flex;
-    align-items: center;
-    gap: 10px;
+    color: var(--text-primary);
+    display: block;
+    /* Remove flex since arrow is gone */
 }
 
 .arrow-circle {
@@ -644,16 +659,44 @@ main {
 }
 
 .works-slider {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding: 20px 0;
+}
+
+.works-track {
+    display: flex;
     gap: 20px;
+    width: max-content;
+    padding-right: 20px;
+    /* Add the gap at the end for perfect 50% loop */
+    animation: scroll-works 30s linear infinite;
+}
+
+.works-track:hover {
+    animation-play-state: paused;
 }
 
 .work-card {
+    flex: 0 0 400px;
+    /* Fixed width for carousel items */
     position: relative;
     border-radius: 4px;
     overflow: hidden;
     aspect-ratio: 1/1;
+}
+
+@keyframes scroll-works {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-33.33%);
+    }
+
+    /* -33.33% because we have 3 sets of works */
 }
 
 .work-card .interactive-img {
@@ -982,7 +1025,6 @@ main {
 /* Services Section */
 .services-section {
     margin-top: 60px;
-    margin-bottom: 80px;
     width: 100%;
     /* Ensure full width */
 }
@@ -1379,7 +1421,7 @@ main {
     flex-direction: column;
     align-items: center;
     gap: 30px;
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
     /* Ensure content sits above particles */
     position: relative;
@@ -1474,7 +1516,7 @@ main {
     padding: 0 40px;
     margin-top: 100px;
     color: #444;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
 }
 
 .footer-text {
@@ -1488,7 +1530,7 @@ main {
 
     .footer-bottom-row {
         flex-direction: column;
-        gap: 20px;
+        gap: 40px;
         align-items: center;
         text-align: center;
     }
@@ -2235,6 +2277,17 @@ main {
         grid-template-columns: 1fr;
     }
 
+    .recent-header {
+        margin-top: 40px !important;
+        margin-bottom: 20px !important;
+        text-align: left !important;
+    }
+
+    .recent-header h3 {
+        font-size: 1.3rem !important;
+        display: block !important;
+    }
+
     .section-title {
         font-size: 2.5rem;
     }
@@ -2245,6 +2298,6 @@ main {
 
     .footer-bottom-row {
         flex-direction: column;
-        gap: 20px;
+        gap: 30px;
     }
 }
