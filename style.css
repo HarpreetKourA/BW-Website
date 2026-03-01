@@ -2177,6 +2177,15 @@ main {
         margin-top: 0 !important;
     }
 
+    section.portfolio-grid .grid-item img {
+        filter: grayscale(0%) brightness(1) !important;
+    }
+
+    section.portfolio-grid .case-study-btn {
+        opacity: 1 !important;
+        transform: translateY(0) !important;
+    }
+
     /* Force Single Column Team/Philosophy */
     .team-container {
         flex-direction: column-reverse !important;
