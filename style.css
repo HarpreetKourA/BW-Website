@@ -2252,9 +2252,6 @@ main {
         margin-top: 0 !important;
     }
 
-    section.portfolio-grid .grid-item img {
-        /* Filter override removed to allow grayscale-to-color transition on mobile */
-    }
 
     section.portfolio-grid .case-study-btn {
         opacity: 1 !important;
