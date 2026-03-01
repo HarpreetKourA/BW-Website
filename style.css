@@ -1148,7 +1148,6 @@ main {
 /* Reviews Section */
 .reviews-section {
     margin-top: 100px;
-    margin-bottom: 80px;
     width: 100%;
 }
 
@@ -1187,7 +1186,6 @@ main {
 /* Reviews Section Layout Fixes */
 .reviews-section {
     margin-top: 100px;
-    margin-bottom: 80px;
     width: 100%;
 }
 
@@ -1407,7 +1405,7 @@ main {
 
 /* CTA Section */
 .cta-section {
-    padding-top: 120px;
+    padding-top: 60px;
     padding-bottom: 60px;
     margin-top: 0;
     margin-bottom: 0;
@@ -1597,6 +1595,7 @@ main {
     .exp-item .period {
         text-align: left;
     }
+
 }
 
 /* =========================================
@@ -2194,8 +2193,28 @@ main {
     }
 
     header {
-        flex-direction: column;
-        gap: 20px;
+        flex-direction: row !important;
+        justify-content: space-between !important;
+        padding: 15px 20px !important;
+        width: calc(100% + 40px) !important;
+        margin: 0 -20px !important;
+        gap: 0 !important;
+    }
+
+    .logo {
+        margin-right: 0 !important;
+    }
+
+    .logo img {
+        height: 30px !important;
+    }
+
+    .mobile-menu-btn {
+        display: block !important;
+    }
+
+    header .btn-secondary {
+        display: none !important;
     }
 
     nav {
@@ -2243,6 +2262,11 @@ main {
     }
 
     /* Force Single Column Team/Philosophy */
+    .team-static {
+        margin-top: 30px !important;
+        margin-bottom: 20px !important;
+    }
+
     .team-container {
         flex-direction: column-reverse !important;
         gap: 30px !important;
@@ -2266,8 +2290,10 @@ main {
         margin-top: 25px !important;
     }
 
+    .process-actions .btn-primary,
     .process-actions .btn-secondary {
         width: 100% !important;
+        justify-content: center !important;
         text-align: center !important;
         padding: 14px 20px !important;
     }
@@ -2277,8 +2303,13 @@ main {
         grid-template-columns: 1fr;
     }
 
+    .recent-works {
+        margin-top: 20px !important;
+        margin-bottom: 40px !important;
+    }
+
     .recent-header {
-        margin-top: 40px !important;
+        margin-top: 0 !important;
         margin-bottom: 20px !important;
         text-align: left !important;
     }
@@ -2286,6 +2317,23 @@ main {
     .recent-header h3 {
         font-size: 1.3rem !important;
         display: block !important;
+    }
+
+    /* Force Full Width for Pillars and Reviews */
+    .services-text,
+    .services-hero-image,
+    .reviews-image,
+    .reviews-intro-text {
+        width: 100% !important;
+        max-width: 100% !important;
+        flex: none !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    .services-intro,
+    .reviews-header-area {
+        gap: 30px !important;
     }
 
     .section-title {
@@ -2298,6 +2346,7 @@ main {
 
     .footer-bottom-row {
         flex-direction: column;
-        gap: 30px;
+        margin-top: 50px;
+        gap: 20px;
     }
 }
