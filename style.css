@@ -375,6 +375,10 @@ main {
     .portfolio-grid {
         grid-template-columns: 1fr;
     }
+
+    .grid-column:nth-child(2) {
+        margin-top: 0;
+    }
 }
 
 /* Portfolio Grid */
@@ -2319,6 +2323,23 @@ main {
 
     .process-image {
         min-height: 300px;
+    }
+
+    .process-actions {
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+        margin-top: 25px;
+    }
+
+    .process-actions .btn-secondary {
+        width: 100%;
+        text-align: center;
+        padding: 14px 20px;
+    }
+
+    .section-desc {
+        max-width: 100%;
     }
 
     .services-intro {
