@@ -2164,6 +2164,20 @@ main {
         font-size: 3rem;
     }
 
+    .cta-group {
+        flex-direction: column !important;
+        gap: 15px !important;
+        width: 100% !important;
+        align-items: center !important;
+    }
+
+    .cta-group .btn-primary,
+    .cta-group .btn-secondary {
+        width: 100% !important;
+        max-width: 300px !important;
+        text-align: center !important;
+    }
+
     /* Force Single Column Portfolio */
     section.portfolio-grid {
         grid-template-columns: 1fr !important;
