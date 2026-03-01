@@ -118,13 +118,57 @@ document.addEventListener('DOMContentLoaded', () => {
             btn.textContent = 'Sending...';
             btn.disabled = true;
 
-            setTimeout(() => {
-                alert('Thank you! Your request has been submitted.');
+            // Get form data
+            const name = document.getElementById('modal-name').value;
+            const email = document.getElementById('modal-email').value;
+            const message = document.getElementById('modal-message').value;
+
+            try {
+                // IMPORTANT: Replace these with your actual credentials from the implementation plan
+                const API_KEY = 'YOUR_ELASTIC_EMAIL_API_KEY_HERE';
+                const VERIFIED_FROM_EMAIL = 'your-verified-sender@example.com';
+                const RECEIVE_TO_EMAIL = 'your-gmail@gmail.com';
+
+                const url = 'https://api.elasticemail.com/v2/email/send';
+
+                const params = new URLSearchParams();
+                params.append('apikey', API_KEY);
+                params.append('subject', `New Lead from Bisonworkz: ${name}`);
+                params.append('from', VERIFIED_FROM_EMAIL);
+                params.append('to', RECEIVE_TO_EMAIL);
+                params.append('bodyHtml', `
+                    <div style="font-family: sans-serif; padding: 20px; border: 1px solid #eee; border-radius: 10px;">
+                        <h2 style="color: #333;">New Lead from Bisonworkz</h2>
+                        <p><strong>Name:</strong> ${name}</p>
+                        <p><strong>Email:</strong> ${email}</p>
+                        <hr style="border: 0; border-top: 1px solid #eee; margin: 20px 0;">
+                        <p><strong>Message:</strong></p>
+                        <p style="white-space: pre-wrap;">${message}</p>
+                    </div>
+                `);
+
+                const response = await fetch(url, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                    body: params
+                });
+
+                const result = await response.json();
+
+                if (result.success) {
+                    alert('Thank you! Your request has been submitted successfully.');
+                    modalForm.reset();
+                    if (typeof closeModal === 'function') closeModal();
+                } else {
+                    throw new Error(result.error || 'Failed to send lead');
+                }
+            } catch (error) {
+                console.error('Submission Error:', error);
+                alert('Oops! There was an issue sending your request. Please try again or email us directly.');
+            } finally {
                 btn.textContent = originalText;
                 btn.disabled = false;
-                modalForm.reset();
-                closeModal();
-            }, 1000);
+            }
         });
     }
 
