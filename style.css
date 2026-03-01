@@ -2004,6 +2004,7 @@ main {
 }
 
 .modal.show {
+    display: flex !important;
     opacity: 1;
 }
 
