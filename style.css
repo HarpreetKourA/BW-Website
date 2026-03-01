@@ -2219,17 +2219,20 @@ main {
         font-size: 2.5rem;
     }
 
-    /* Team Carousel Stack */
-    .team-slide {
+    /* Team/Philosophy Section Stack */
+    .team-container {
         flex-direction: column-reverse;
-        text-align: center;
         gap: 30px;
     }
 
     .bio-content {
         padding-right: 0;
         text-align: left;
-        /* Left align description */
+    }
+
+    .bio-image {
+        max-width: 100%;
+        flex: none;
     }
 
     .exp-item {
