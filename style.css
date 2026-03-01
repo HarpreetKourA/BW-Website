@@ -2253,7 +2253,7 @@ main {
     }
 
     section.portfolio-grid .grid-item img {
-        filter: grayscale(0%) brightness(1) !important;
+        /* Filter override removed to allow grayscale-to-color transition on mobile */
     }
 
     section.portfolio-grid .case-study-btn {
