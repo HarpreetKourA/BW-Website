@@ -110,7 +110,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Form Submission (Mock)
     const modalForm = document.getElementById('modal-lead-form');
     if (modalForm) {
-        modalForm.addEventListener('submit', (e) => {
+        modalForm.addEventListener('submit', async (e) => {
             e.preventDefault();
             const btn = modalForm.querySelector('button[type="submit"]');
             const originalText = btn.textContent;
@@ -124,10 +124,10 @@ document.addEventListener('DOMContentLoaded', () => {
             const message = document.getElementById('modal-message').value;
 
             try {
-                // IMPORTANT: Replace these with your actual credentials from the implementation plan
-                const API_KEY = 'YOUR_ELASTIC_EMAIL_API_KEY_HERE';
-                const VERIFIED_FROM_EMAIL = 'your-verified-sender@example.com';
-                const RECEIVE_TO_EMAIL = 'your-gmail@gmail.com';
+                // credentials provided by the user
+                const API_KEY = 'EB1A5B77B70CD48AB21ABEDEAFAB47DE7A0DC687130B7DC04B9299CE1E8C0F147AEC1627950BA2CA4763B4300316CB2B';
+                const VERIFIED_FROM_EMAIL = 'bisonworkz@gmail.com';
+                const RECEIVE_TO_EMAIL = 'bisonworkz@gmail.com';
 
                 const url = 'https://api.elasticemail.com/v2/email/send';
 
