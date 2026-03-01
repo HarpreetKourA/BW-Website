@@ -347,39 +347,7 @@ main {
 
 
 /* Responsive */
-@media (max-width: 1024px) {
-    .portfolio-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
 
-@media (max-width: 768px) {
-    .app-container {
-        padding: 0 20px;
-    }
-
-    header {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    nav {
-        display: none;
-        /* Simplify for mobile for now */
-    }
-
-    .hero-title {
-        font-size: 3rem;
-    }
-
-    .portfolio-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .grid-column:nth-child(2) {
-        margin-top: 0;
-    }
-}
 
 /* Portfolio Grid */
 .portfolio-grid {
@@ -2168,197 +2136,92 @@ main {
     }
 }
 
+/* =========================================
+   RESPONSIVE QUERIES (END OF FILE FOR MAX SPECIFICITY)
+   ========================================= */
+
+@media (max-width: 1024px) {
+    .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 @media (max-width: 768px) {
+    .app-container {
+        padding: 0 20px;
+    }
 
-    /* Header Changes */
     header {
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-
-        /* Force full viewport width on mobile to avoid padding issues */
-        width: 100vw;
-        margin-left: calc(50% - 50vw);
-        margin-right: calc(50% - 50vw);
-        padding: 20px 20px;
-        /* Safe padding for logo/hamburger */
+        flex-direction: column;
+        gap: 20px;
     }
 
     nav {
         display: none;
-        /* Hide standard nav */
-        margin-right: 0;
     }
 
-    header .btn-secondary {
-        display: none;
-        /* Hide header contact button on mobile to save space */
-    }
-
-    .mobile-menu-btn {
-        display: block;
-        /* Show hamburger */
-    }
-
-    .logo {
-        margin-right: 0;
-    }
-
-    .logo img {
-        height: 30px !important;
-        /* Reduce logo size on mobile */
-    }
-
-    /* Blogs Grid Mobile */
-    .blog-grid {
-        grid-template-columns: 1fr;
-    }
-
-    /* Typography Adjustments */
     .hero-title {
         font-size: 3rem;
+    }
+
+    /* Force Single Column Portfolio */
+    section.portfolio-grid {
+        grid-template-columns: 1fr !important;
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 30px !important;
+    }
+
+    section.portfolio-grid .grid-column {
+        width: 100% !important;
+        margin-top: 0 !important;
+    }
+
+    /* Force Single Column Team/Philosophy */
+    .team-container {
+        flex-direction: column-reverse !important;
+        gap: 30px !important;
+    }
+
+    .bio-content {
+        padding-right: 0 !important;
+        text-align: left !important;
+    }
+
+    .bio-image {
+        max-width: 100% !important;
+        flex: none !important;
+    }
+
+    /* Force Single Column Process Actions */
+    .process-actions {
+        flex-direction: column !important;
+        gap: 15px !important;
+        width: 100% !important;
+        margin-top: 25px !important;
+    }
+
+    .process-actions .btn-secondary {
+        width: 100% !important;
+        text-align: center !important;
+        padding: 14px 20px !important;
+    }
+
+    /* Other Mobile Optimizations */
+    .blog-grid {
+        grid-template-columns: 1fr;
     }
 
     .section-title {
         font-size: 2.5rem;
     }
 
-    /* Team/Philosophy Section Stack */
-    .team-container {
-        flex-direction: column-reverse;
-        gap: 30px;
-    }
-
-    .bio-content {
-        padding-right: 0;
-        text-align: left;
-    }
-
-    .bio-image {
-        max-width: 100%;
-        flex: none;
-    }
-
-    .exp-item {
-        display: flex;
-        /* Use Flexbox for better control */
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        text-align: left;
-        gap: 15px;
-        margin-bottom: 20px;
-    }
-
-    .exp-item .period {
-        text-align: right;
-        white-space: nowrap;
-        /* Prevent wrapping */
-    }
-
-    /* Services Grid Mobile */
     .services-grid {
         grid-template-columns: 1fr;
-        margin-bottom: 20px;
-        /* Reduced gap between services and marquee */
     }
 
-    /* Reduced gap below overall services section */
-    .services-section {
-        margin-bottom: 40px;
-    }
-
-    .services-intro {
-        margin-bottom: 30px;
-        /* Reduced gap above services list */
-    }
-
-    /* Reviews Section Mobile */
-    .reviews-section {
-        margin-top: 40px;
-        /* Reduced gap above reviews */
-        margin-bottom: 40px;
-    }
-
-    /* Stats Bar Mobile */
-    .stats-bar {
-        padding: 30px;
-        gap: 20px;
-    }
-
-    /* Blog Page Mobile Adjustments */
-    .blog-hero {
-        padding: 50px 20px 20px;
-        /* Further reduced padding */
-    }
-
-    .blog-hero h1 {
-        font-size: 2rem;
-        /* Reduced title size */
-    }
-
-    .blog-hero p {
-        font-size: 1.15rem;
-        /* Updated to specific request */
-        padding: 0 10px;
-    }
-
-    /* Footer/CTA Adjustments */
     .footer-bottom-row {
         flex-direction: column;
         gap: 20px;
-        padding-bottom: 40px;
-    }
-
-    /* Modal Form Mobile */
-    .modal-content {
-        width: 95%;
-        padding: 20px;
-    }
-
-    /* Process Section */
-    .process-section {
-        flex-direction: column;
-    }
-
-    .process-image {
-        min-height: 300px;
-    }
-
-    .process-actions {
-        flex-direction: column;
-        gap: 15px;
-        width: 100%;
-        margin-top: 25px;
-    }
-
-    .process-actions .btn-secondary {
-        width: 100%;
-        text-align: center;
-        padding: 14px 20px;
-    }
-
-    .section-desc {
-        max-width: 100%;
-    }
-
-    .services-intro {
-        flex-direction: column;
-    }
-
-    .services-text,
-    .services-hero-image {
-        max-width: 100% !important;
-        flex: 0 0 100% !important;
-    }
-
-    .reviews-header-area {
-        flex-direction: column-reverse;
-    }
-
-    .reviews-image,
-    .reviews-intro-text {
-        max-width: 100% !important;
-        flex: 0 0 100% !important;
     }
 }
